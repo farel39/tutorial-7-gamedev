@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://3bj4q2hq3e2l"]
+
+[ext_resource type="PackedScene" uid="uid://bjvvc4yryfqdq" path="res://scenes/Player.tscn" id="1_ymo8b"]
+[ext_resource type="PackedScene" uid="uid://dltqory4o1xju" path="res://scenes/World 1.tscn" id="2_gpsl1"]
+[ext_resource type="PackedScene" uid="uid://ovs3xsf27gl8" path="res://scenes/Area Trigger.tscn" id="3_gpsl1"]
+[ext_resource type="PackedScene" uid="uid://c8rd2bytb7rls" path="res://scenes/ItemPickup.tscn" id="4_kbmnf"]
+
+[node name="Level1" type="Node3D" unique_id=204014255]
+
+[node name="Player" parent="." unique_id=551304240 instance=ExtResource("1_ymo8b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.7347107, -21.522873)
+
+[node name="World 1" parent="." unique_id=914455518 instance=ExtResource("2_gpsl1")]
+
+[node name="Area Trigger" parent="." unique_id=1301961941 instance=ExtResource("3_gpsl1")]
+transform = Transform3D(9.115, 0, 0, 0, 9.115, 0, 0, 0, 9.115, 0, -2, 28.53955)
+sceneName = "Win Screen"
+
+[node name="Area Trigger2" parent="." unique_id=510754822 instance=ExtResource("3_gpsl1")]
+transform = Transform3D(15.785, 0, 0, 0, 15.785, 0, 0, 0, 15.785, 0, -16.16803, 14.691711)
+
+[node name="ItemPickup" parent="." unique_id=609704290 instance=ExtResource("4_kbmnf")]
+transform = Transform3D(-0.71891546, 0, 0.6950977, 0, 1, 0, -0.6950977, 0, -0.71891546, 3.4287415, -3.2901306, 6.456192)
+
+[node name="ItemPickup2" parent="." unique_id=957686891 instance=ExtResource("4_kbmnf")]
+transform = Transform3D(0.7919275, 0, 0.61061525, 0, 1, 0, -0.61061525, 0, 0.7919275, -3.2668343, -3.2901306, 6.633362)
+
+[node name="Area Trigger3" parent="." unique_id=245497515 instance=ExtResource("3_gpsl1")]
+transform = Transform3D(22.45, 0, 0, 0, 22.45, 0, 0, 0, 22.45, 0, -17.949661, -3.117302)

@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://c8rd2bytb7rls"]
+
+[ext_resource type="Script" uid="uid://bph8jobwl045i" path="res://scenes/item_pickup.gd" id="1_a0vs4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a0vs4"]
+albedo_color = Color(1, 1, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_1m3bo"]
+material = SubResource("StandardMaterial3D_a0vs4")
+height = 0.182
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_n8pyy"]
+height = 0.333
+
+[node name="ItemPickup" type="StaticBody3D" unique_id=609704290]
+script = ExtResource("1_a0vs4")
+item_name = "Koin"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1762797883]
+transform = Transform3D(0.01679186, 0.99969584, 0.018061446, -0.97935563, 0.012805406, 0.20173863, 0.20144598, -0.021076148, 0.97927284, 0.027357757, 0.0037579536, 0)
+transparency = 0.33
+mesh = SubResource("CylinderMesh_1m3bo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1263637830]
+transform = Transform3D(0.0066147125, 0.9999781, 0, -0.9999781, 0.0066147125, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("CylinderShape3D_n8pyy")
